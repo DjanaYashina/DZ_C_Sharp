@@ -5,16 +5,18 @@
 // a = -3, b = 9 -> нет
 
 Console.WriteLine("Введите число 1:");
+string? numberOne = Console.ReadLine();
+int nOne = Convert.ToInt32(numberOne); 
+
 Console.WriteLine("Введите число 2:");
-if
-{
+string? numberTwo = Console.ReadLine();
+int nTwo = Convert.ToInt32(numberTwo);
 
+if (nTwo * nTwo == nOne)
+{
+    Console.WriteLine("Да");
 }
-Console.Write("Введите день недели: ");
-string? Days = Console.ReadLine();
-int IntDays = Convert.ToInt32(Days);
-
-if (IntDays == 1)
+else
 {
-    Console.WriteLine("Это понедельник");
+    Console.WriteLine("Нет");
 }

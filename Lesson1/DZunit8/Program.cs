@@ -3,8 +3,11 @@
 Console.WriteLine("Введите число:");
 string? number = Console.ReadLine();
 int N = Convert.ToInt32(number); 
-
-for (int i = 2; i<= N; i = i+2 ) 
+int i = 1;
+while (i <= N) 
 {
-  Console.Write(i);
+  if (i % 2 == 0)
+  Console.Write(i + ", ");
+  i++;
+
 }

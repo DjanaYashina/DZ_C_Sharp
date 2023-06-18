@@ -3,3 +3,20 @@
 // 14212 -> нет
 // 23432 -> да
 // 12821 -> да
+
+Console.WriteLine("Для проверки палиндромности числа, введите положительное пятизначное число:");
+int num = Convert.ToInt32(Console.ReadLine());
+
+if (num > 99999 || num < 10000)
+{
+    Console.WriteLine("Вами введено не пятизначное число");
+}
+
+else if (num / 10000 == num % 10 && (num / 1000) % 10 == (num / 10) % 10)
+{
+    Console.WriteLine("Число является палиндромом");
+}
+    else
+    {
+        Console.WriteLine("Число не палиндром");
+    }

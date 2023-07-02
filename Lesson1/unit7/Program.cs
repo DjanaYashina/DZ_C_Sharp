@@ -37,11 +37,11 @@ int number = Convert.ToInt32(Console.ReadLine());
 int count = number.ToString().Length;
 Console.Write(MakeArray(number, count));
 
-int ReadInt(string message)
-{
- Console.Write(message);
- return Convert.ToInt32(Console.ReadLine());
-}
+// int ReadInt(string message)
+// {
+//  Console.Write(message);
+//  return Convert.ToInt32(Console.ReadLine());
+// }
 int MakeArray(int a, int b)
 {
 int result = 0;

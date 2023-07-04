@@ -40,7 +40,7 @@ int RowsNumber = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите число для определения позиции в колонке");
 int ColumnsNumber = Convert.ToInt32(Console.ReadLine());
 int number = 0;
-if (RowsNumber>matrix.GetLength(0) || RowsNumber<0 || ColumnsNumber>matrix.GetLength(1) || ColumnsNumber<0)
+if (RowsNumber>=matrix.GetLength(0) || RowsNumber<0 || ColumnsNumber>=matrix.GetLength(1) || ColumnsNumber<0)
 {
     Console.WriteLine("такого числа в массиве нет");
 }

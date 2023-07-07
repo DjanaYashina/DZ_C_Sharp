@@ -35,21 +35,22 @@ void PrintMatrix(int[,] matrix)
 
 int GetMatrix(int[,] matrix)
 {
-Console.WriteLine("Введите число для определения позиции в строке");
-int RowsNumber = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Введите число для определения позиции в колонке");
-int ColumnsNumber = Convert.ToInt32(Console.ReadLine());
-int number = 0;
-if (RowsNumber>=matrix.GetLength(0) || RowsNumber<0 || ColumnsNumber>=matrix.GetLength(1) || ColumnsNumber<0)
-{
-    Console.WriteLine("такого числа в массиве нет");
-}
-else
-{
-    number = matrix[RowsNumber,ColumnsNumber];
-    Console.Write("Заданное число = ");
-}
-return number;
+  Console.WriteLine("Введите число для определения позиции в строке");
+  int RowsNumber = Convert.ToInt32(Console.ReadLine());
+  Console.WriteLine("Введите число для определения позиции в колонке");
+  int ColumnsNumber = Convert.ToInt32(Console.ReadLine());
+  int number = 0;
+  if (RowsNumber>=matrix.GetLength(0) || RowsNumber<0 || ColumnsNumber>=matrix.GetLength(1) || ColumnsNumber<0)
+  {
+      Console.WriteLine("такого числа в массиве нет");
+  }
+  else
+  {
+      number = matrix[RowsNumber,ColumnsNumber];
+      Console.Write("Заданное число = ");
+      Console.Write(number = matrix[RowsNumber,ColumnsNumber]);
+  }
+  return number;
 }
 
 const int ROWS = 3;
